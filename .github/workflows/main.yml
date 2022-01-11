@@ -26,14 +26,7 @@ jobs:
       - uses: actions/checkout@v2
 
 
-      - name: run the java version
-        run: java --version
-      - name: maven version
-        run: mvn --version
-      - name: git version
-        run: git --version
-      - name: docker version
-        run: docker -v
-      - name: nginx version
-        run: nginx -version  
-      
+      - name: run java code
+        run: javac HelloWorld.java
+      - name: java class
+        run: java HelloWorld
